@@ -1,0 +1,16 @@
+body{
+
+    padding: 20px;
+    margin-left: 40px;
+}
+
+h1,h2{
+    padding: 10px;
+    color: blue;
+    font-size: 3em;
+    font-weight: bold;
+}
+p{
+    padding: 2px;
+    font-size: 2em;
+}

@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Guia Comandos Git</title>
   </head>
-  <body></body>
+  <body>
+    <h1>QUE ES GIT</h1>
+    <p>Es un sofware de control de versiones creado por Linus Torval</p>
+    <p>Es un sofware libre</p>
+    <h2>PARA QUE SIRVE?</h2>
+    <p>Para facilitar el desarrollo y mantenimiento de aplicaciones tanto de forma individual como sobre todo al trabajar en equipo.</p>
+    <h2>COMO LO HACE?</h2>
+    <p>Guardando un registro de todos los cambios que sufran los archivos que forman parte de nuestra aplicación.</p>
+    <p>Git almacena los archivos con un código alfanúmerico y nosotros debemos añadirle una descripción.</p>
+    <p>Siempre que detectemos algún problema despues de realizar un cambio en nuestro proyecto podremos volver a la versión anterior que nos guardo git</p>
+    <p>por lo tanto su función principal, no la única es que podras revertir facilmente un archivo a un estado previo si no te satisfacen los cambios efectuados en el.</p>
+    <h2>RAMAS</h2>
+    <p>Git tiene la posibilidad de crear ramas "branch" cuando trabajamos en equipo en un mismo proyecto o archivo, suministra su propia copia a cada programador y cuando han terminado su trabajo Git se encarga de fusionar los trabajos de todos los programadores en un solo archivo.</p>
+    <p>Git detecta que varios programadores han echo cambios en la misma parte del documento,nos preguntará que es lo que queremos hacer,que cambios queremos efectua.</p>
+
+    <h2>CREAR UN REPOSITORIO</h2>
+    <p>Git bash nos ofrece la posibilidad de abrir la consola de git directamente desde nuestro directorio de proyecto para no tener que buscar o desplazarnos con comandos en la consola.</p>
+    <h2>GIT INIT</h2>
+    <p>Una vez estamos situados en nuestro directorio de proyecto con git bash,con el comando "git init" con esto git nos creará dos areas que no veremos donde git irá almacenando los archivos, un area será la de ensayo "staging area" y otra nuestro repositorio local, en el area de ensayo nosotros podremos ver a que arhivo le hemos dado seguimiento y a cuales no, en que estado se encuentran nuestors archivos etc.. y en el repositorio local sera donde se almacenen esas copias que va haciendo git a nuestros archivos y que tendremos disponibles cuando nosotros queramos.
+        </p>
+       <h2>GIT STATUS -S</h2>
+      <p>Este comando nos mostrara todos los archivos que tenemos en la carpeta de proyecto y nos indicará su estado,es decir si le estamos haciendo un seguimiento o no,los que no esten en seguimiento se mostraran con un interrogante en rojo y los que si están en seguimiento los indicará con una letra "A" en color verde.</p> 
+       <h2>GIT ADD</h2>
+       <p>Este comando lo utilizamos para indicar a que archivos deseamos hacerle el seguimiento, podemos seleccionar con el un archivo especifico o todos con esto conseguimos que git nos lleve los archivos desde nuestro direcctorio de trabajo al area de ensayo creada en el paso anterior,esto lo hace internamente nosotros seguiremos viendo los archivos en nuestro directorio de trabajo.</p>
+       <p>Para hacerle sequimiento a un solo archivo seria "git add nombre de archivo" aquí en git status -s nos saldría el nombre del archivo que nombremos con la letra"A" en verde por delante.Y para hacerle el seguimiento a todos los archivos del proyecto "git add ."</p>
+       <h2>GIT COMMIT</h2>
+       <p>Con este comando pasaremos los archivos a los que decidimos hacer seguimiento del area de ensayo a el repositorio local,una vez lo tenemos en el repositorio local en cualquier momento podremos obtener un respaldo de como se encontraba el archivo antes de añadirlo al repositorio local.</p>
+       <p>Para poder añadir una descripción del seguimiento muy recomendable sería con "git commit -m 'Aqui la descripción que queramos darle'".</p>
+  </body>
 </html>
